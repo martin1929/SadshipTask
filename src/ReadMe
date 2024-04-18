@@ -1,0 +1,22 @@
+Hi, I add Test class to help you test app.But if it is not necessary you can leave it.
+WarehouseService class is singleton.
+I tried to give correct names to methods that why I think there is no need for comments.
+
+WareHouseService
+
+addWarehouse(Warehouse warehouse):Whit this method we add Warehouse to List.
+getAllMaterialsQuantity(MaterialType type):With this method we get all materials quantity from all warehouses by material type.
+removeWarehouse(Warehouse warehouse):With this methode we remove Warehouse from list (It will be better if Warehouse has its Id).
+printWarehouses(List<Warehouse> warehouseList):With this method we can print Warehouse list
+
+Warehouse
+addMaterial(Material material):With this method we add material to Warehouse.
+relocateMaterial(MaterialType type, Warehouse target, int amount) With this methode we relocate material from one Warehouse to other.
+removeMaterial(MaterialType type, int quantity):With this method we remove material from Warehouse(If it is necessary we can delete from list when it`s amount is 0).
+addSubscriber(WarehouseSubscriber warhouseSubscriber):With this method we add subscriber.
+removeSubscriber(WarehouseSubscriber warehouseSubscriber):With this method we remove subscriber.
+notifySubscribers(String message):With this method we can notify  subscriber about changes (In my case I just print message).
+getMaterialQuantity(MaterialType type):With this method we get  material quantity from Warehouse.
+
+WarehouseSubscriber
+update(String message):With this method we get notified about changes
